@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DDX</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="maincontent">
+      <nav class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="" class="breadcrumbs__link">DDX</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="" class="breadcrumbs__link">Что у нас есть</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item--active">
+            <a href="" class="breadcrumbs__link">Mywellness Cloud</a>
+          </li>
+        </ul>
+      </nav>
+        <h1 class="maincontent__title">Ваши данные</h1>
+        <h2 class="maincontent__subtitle">Все поля обязательны для заполнения</h2>
+        <form class="form">
+              <label class="form__label">
+                <input placeholder="Имя Фамилия" type="text" class="form__input" name="name">
+              </label>
+              <label class="form__label">
+                <div class="flag"><img src="./img/flag.png">
+                </div>
+                <input type="text" placeholder="+7 (___) ___-__-__"  class="form__input form__input--phone" name="tel" id="tel">
+              </label>
+
+              <label class="form__label">
+                <input placeholder="Email" type="text" class="form__input" name="email" id="email">
+              </label>
+              <div class="form__checkboxes">
+                <div class="form__checkbox">
+                    <input value="gender-men" id="gender-men" type="radio" class="form__checkbox-input" name="gender" checked>
+                    <label for="gender-men" class="form__checkbox-label">Мужчина</label>
+                </div>
+                <div class="form__checkbox">
+                    <input value="gender-woman" id="gender-woman" type="radio" class="form__checkbox-input" name="gender">
+                    <label for="gender-woman" class="form__checkbox-label">Женщина </label>
+                </div>
+              </div>
+              <label class="form__label">
+                <input placeholder="Дата рождения" type="text" class="form__input" name="birth" id="date-birth">
+              </label>
+              <div class="form__select" data-state="">
+                <div class="form__select-title" data-default="Option 0">ТАРИФ</div>
+                <div id="tariff-validate" class="form__select-content">
+                  <input value="Тариф" id="Select0" class="form__select-input" type="radio" name="tariff" checked />
+                  <label for="Select0" class="form__select-label">ТАРИФ</label>
+                  <input value="Гостевой визит" id="Select1" class=" form__select-input" type="radio" name="tariff" />
+                  <label for="Select1" class="form__select-label">
+                    <div class="form__option-name">Гостевой визит</div>
+                    <div class="form__option-price">1 000 Р/день</div>
+                  </label>
+                  <input value="Infinity" id="Select2" class="form__input form__select-input" type="radio" name="tariff" />
+                  <label for="Select2" class="form__select-label">
+                    <div class="form__option-name">Infinity</div>
+                    <div class="form__option-price">2 3000 Р/мес.</div>
+                  </label>
+                  <input value="Light" id="Select3" class="form__input form__select-input" type="radio" name="tariff" />
+                  <label for="Select3" class="form__select-label">
+                    <div class="form__option-name">Light</div>
+                    <div class="form__option-price">1 700 Р/мес.</div>
+                  </label>
+                  <input value="Smart" id="Select4" class="form__input form__select-input" type="radio" name="tariff" />
+                  <label for="Select4" class="form__select-label">
+                    <div class="form__option-name">Smart</div>
+                    <div class="form__option-price">2 000 Р/мес.</div>
+                  </label>
+                </div>
+              </div>
+              <div class="form__select form__select--club" data-state="">
+                <div class="form__select-title form__select-title--club" data-default="Option 0">КЛУБ</div>
+                <div id="club-validate" class="form__select-content">
+                  <input value="Клуб" id="singleSelect0" class="form__select-input" type="radio" name="club" checked />
+                  <label for="singleSelect0" class="form__select-label form__select-label--club">КЛУБ</label>
+                  <input value="Клуб 1" id="singleSelect1" class="form__input form__select-input" type="radio" name="club" />
+                  <label for="singleSelect1" class="form__select-label form__select-label--club">
+                    Клуб 1
+                  </label>
+                  <input value="Клуб 2" id="singleSelect2" class="form__input form__select-input" type="radio" name="club" />
+                  <label for="singleSelect2" class="form__select-label form__select-label--club">
+                    Клуб 2
+                  </label>
+                  <input value="Клуб 3" id="singleSelect3" class="form__input form__select-input" type="radio" name="club" />
+                  <label for="singleSelect3" class="form__select-label form__select-label--club">
+                    Клуб 3
+                  </label>
+                  <input value="Клуб 4" id="singleSelect4" class="form__input form__select-input" type="radio" name="club" />
+                  <label for="singleSelect4" class="form__select-label form__select-label--club">
+                    Клуб 4
+                  </label>
+                </div>
+              </div>
+            <div class="form__button">
+              <input type="submit" value="Далее" class="button">
+            </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

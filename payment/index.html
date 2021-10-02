@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DDX</title>
+  <link rel="stylesheet" href="./../css/main.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="maincontent">
+      <nav class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="" class="breadcrumbs__link">DDX</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="" class="breadcrumbs__link">Что у нас есть</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item--active">
+            <a href="" class="breadcrumbs__link">Mywellness Cloud</a>
+          </li>
+        </ul>
+      </nav>
+        <h1 class="maincontent__title">Ваши данные</h1>
+        <div class="payment-page">
+        <form class="form">
+          <label class="form__label">
+            <input placeholder="Дата начала занятий" type="text" class="form__input" name="date" id="date">
+          </label>
+          <label class="form__label">
+                <input placeholder="Промокод" type="text" class="form__input" name="name">
+          </label>
+          <div class="form__buttons">
+            <div class="form__button form__button--payment">
+              <input type="submit" value="Назад" class="button button--back">
+            </div>
+              <div class="form__button form__button--payment">
+                <input type="submit" value="Далее" class="button button--next">
+              </div>
+          </div>
+        </form>
+        <div class="payment">
+        <div class="payment-block">
+          <div class="payment-block__part tariff">
+            <div class="payment-block__part-name">Стоимость тарифа Infinity:</div>
+            <div class="payment-block__part-price">2 000 Р</div>
+          </div>
+          <div class="payment-block__part">
+            <div class="payment-block__part-name">Вступительный взнос:</div>
+            <div class="payment-block__part-price payment-block__part-price--before">3 000 Р</div>
+            <div class="payment-block__part-price payment-block__part-price--now">2 500 Р</div>
+          </div>
+          <div class="payment-block__part">
+            <a href="" class="payment-block__part-link">Подробнее</a>
+          </div>
+          <div class="payment-block__part">
+            <div class="payment-block__part-name total">Итого к оплате за первый месяц:</div>
+            <div class="payment-block__part-price payment-block__part-price--before total__price">5 000 Р</div>
+            <div class="payment-block__part-price payment-block__part-price--now total__price">4 500 Р</div>
+          </div>
+          <p class="payment-block__desc">Ежемесячное продление подписки 
+            далее будет равно стоимости тарифа</p>
+        </div>
+        <div class="countdown">
+          <div class="countdown__text">до окончания акции осталось</div>
+          <div class="countdown__clock">1 дней  12 часов  43 секунд
+          </div>
+        </div>
+
+      </div>
+      </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="./js/payment.js"></script>
+</body>
+</html>

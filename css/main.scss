@@ -1,0 +1,21 @@
+//normalize
+@import "./normalize.css";
+
+//media
+
+@import "./media.scss";
+
+
+$tablets: 768px;
+$phones: 480px;
+
+//setups
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
+@import "./layout.scss";
+
+//components
+
+@import "./components/maincontent.scss";
+@import "./components/breadcrumbs.scss";
+@import "./components/form.scss";
+@import "./components/payment.scss";

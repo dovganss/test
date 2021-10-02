@@ -1,0 +1,42 @@
+.breadcrumbs {
+  padding-top: rem(12px);
+}
+
+.breadcrumbs__list {
+  display: flex;
+}
+
+.breadcrumbs__item {
+  margin-right: rem(19px);
+  position: relative;
+
+  &--active {
+    opacity: 0.5;
+  }
+
+  &:nth-child(2) {
+    &:before {
+      right: -13%;
+    }
+  }
+
+  &:last-child {
+    &:before {
+      content: "";
+    }
+  }
+
+  &:before {
+    content: url(./../../img/breadcrumbs.png);
+    position: absolute;
+    right: -41%;
+    top: -5%;
+
+  }
+}
+
+.breadcrumbs__link {
+  font-size: 12px;
+  color: #ED692A;
+  
+}
